@@ -1,0 +1,9 @@
+/*Estilo da página de login */
+
+/*Para resetar os valores de *, body e div*/
+*,
+body,
+div{
+    padding: 0;
+    margin: 0;
+}

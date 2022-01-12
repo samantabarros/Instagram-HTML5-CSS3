@@ -1,0 +1,127 @@
+<!DOCTYPE html>  <!--Digite ! inicialmente para criar a estrutura base de uma forma mais rapida-->
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8" />
+        <meta name = "viewport" content="width=device-width, initial-scale = 1.0" />
+         <link rel="stylesheet" href = "./style/style.css"/>
+         <title> Instagram Clone</title>
+    </head>
+    <body>
+        <main><!--Conteudo principal -->
+            <section>
+                <div><!-- div para imagem dos telefones -->
+                    <img src = "./images/phones.png" alt = "instagram-phones">
+                </div><!-- fim da div para imagem dos telefones -->
+                <div> <!-- div para container direito de login-->
+                    <div> <!-- div para logo do Instagram -->
+                        <img src = "./images/logo-instagram.png" alt  = "instagram-logo">
+                    </div><!-- fim da div para logo do Instagram -->
+                    <div> <!-- div para inputs-->
+                      <!-- div*2>input*1label*2-->
+                      <div><!-- div para nome de usuário-->
+                          <input type="text" name = "user_id" required>
+                          <label for="user_id">Telefone, nome de usuário ou email</label>
+                     </div> <!-- fim da div para nome de usuário-->
+                     <div><!-- div para senha-->
+                        <input type="password" name = "user_password" required>
+                        <label for="user_password">Senha</label>
+                     </div><!-- fim da div para senha-->
+                     <button type = "submit">Entrar</button> <!-- Botao entrar-->
+                     <span>ou</span>
+                     <div><!-- div para tags de links (a*2)-->
+                        <a href="#" target = "_blank">Entrar com o Facebook</a>
+                        <a href="#" target = "_blank">Esqueceu a senha?</a>
+                     </div><!-- fim da div para tags de links (a*2)-->
+                   </div><!--fim da div para inputs-->
+                   <div><!-- div não tem uma conta-->
+                       <p>Não tem uma conta<a href="#" target="_blank">Cadastre-se</a></p>
+                   </div><!--fim da div não tem uma conta-->
+                   <div><!-- div obter aplicativo-->
+                     <p>Obtenha o aplicativo</p>
+                     <div><!-- div download-->
+                         <img src="/images/app-store-download.png" alt="Android">
+                         <img src="/images/google-play-download.png" alt = "IOS">
+                     </div><!-- fim da div download-->
+                   </div> <!-- fim da div obter aplicativo-->
+                </div> <!-- fim da div para container direito de login-->
+            </section><!-- fim da section-->   
+        </main> <!--fim de main-->
+        <footer> <!--rodapé-->
+            <!--ul>li*11.footer_links>a*1-->
+            <ul>
+                <li class="footer_links">
+                    <a href="#" target="_blank">Meta</a>
+                </li>
+                <li class="footer_links">
+                    <a href="#" target="_blank">Sobre</a>
+                </li>
+                <li class="footer_links">
+                    <a href="#" target="_blank">Blog</a>
+                </li>
+                <li class="footer_links">
+                    <a href="#" target="_blank">Carreiras</a>
+                </li>
+                <li class="footer_links">
+                    <a href="#" target="_blank">Ajuda</a>
+                </li>
+                <li class="footer_links">
+                    <a href="#" target="_blank">API</a>
+                </li>
+                <li class="footer_links">
+                    <a href="#" target="_blank">Privacidade</a>
+                </li>
+                <li class="footer_links">
+                    <a href="#" target="_blank">Termos</a>
+                </li>
+                <li class="footer_links">
+                    <a href="#" target="_blank">Principais contas</a>
+                </li>
+                <li class="footer_links">
+                    <a href="#" target="_blank">Hashtags</a>
+                </li>
+                <li class="footer_links">
+                    <a href="#" target="_blank">Localizações</a>
+                </li>
+                <li class="footer_links">
+                    <a href="#" target="_blank">Instagram Lite</a>
+                </li>
+            </ul>
+            <ul>
+              <li class="footer_links">
+                  <a href="#" target="_blank">Beleza</a>
+              </li>  
+              <li class="footer_links">
+                  <a href="#" target="_blank">Dança</a>
+              </li> 
+              <li class="footer_links">
+                  <a href="#" target="_blank">Fitness</a>
+              </li> 
+              <li class="footer_links">
+                 <a href="#" target="_blank">Comida e bebida</a>
+              </li> 
+              <li class="footer_links">
+                  <a href="#" target="_blank">Casa e jardim</a>
+              </li> 
+              <li class="footer_links">
+                  <a href="#" target="_blank">Música</a>
+              </li> 
+              <li class="footer_links">
+                  <a href="#" target="_blank">Artes visuais</a>
+              </li> 
+            </ul>
+            <ul>
+                <li>
+                    <select name="select">
+                        <option value="idioma01" selected>Português</option>
+                        <option value="idioma02">Inglês</option>
+                        <option value="idioma03">Espanhol</option>
+                        <option value="idioma04">Francês</option>
+                        <option value="idioma05">Alemão</option>
+                        <option value="idioma06">Italiano</option>
+                    </select>
+                </li>
+                <li>&copy; 2022 Instagram from Meta</li>
+            </ul>
+        </footer> <!--fim do rodapé--> 
+    </body>
+</html>
