@@ -212,3 +212,22 @@ ul.copyright li.footer_links select{
     font-size: 0.8rem;
 }
 
+@media(max-width:1024px){
+    .section{
+        width: 90%;     
+    }
+}
+@media(max-width:650px){
+    body{
+        background-color: #ffffff;
+    }
+    .section{
+        width: 90%;
+    }
+    .imagem_phone{
+        display: none;
+    }
+    .main_content{
+        width: 100%;
+    }
+}
