@@ -4,51 +4,63 @@
         <meta charset = "UTF-8" />
         <meta name = "viewport" content="width=device-width, initial-scale = 1.0" />
         <link rel="stylesheet" href = "./style/style.css"/>
+        <link rel="stylesheet" href="./style/all.min.css"/>
+        <script defer src="./js/all.min.js"></script> <!--Carrega todos os estilos-->
         <title> Instagram Clone</title>
     </head>
     <body>
         <main><!--Conteudo principal -->
             <section>
-                <div><!-- div para imagem dos telefones -->
-                    <img src = "./images/phones.png" alt = "instagram-phones">
+                <div class="imagem_phone"><!-- div para imagem dos telefones -->
+                    <img src = "./images/phones.png" alt = "instagram_phones">
                 </div><!-- fim da div para imagem dos telefones -->
-                <div> <!-- div para container direito de login-->
-                    <div> <!-- div para logo do Instagram -->
-                        <img src = "./images/logo-instagram.png" alt  = "instagram-logo">
-                    </div><!-- fim da div para logo do Instagram -->
-                    <div> <!-- div para inputs-->
-                      <!-- div*2>input*1label*2-->
-                      <div><!-- div para nome de usuário-->
+
+                <div class = "main_content"> <!-- div para container direito de login-->
+                    <div class = "login_main_content"> <!-- div para inputs-->
+                        <div class = "content_header"> <!-- div para logo do Instagram -->
+                            <img src = "./images/logo-instagram.png" alt  = "instagram_logo">
+                        </div><!-- fim da div para logo do Instagram -->
+
+                       <!-- div*2>input*1label*2-->
+                       <div class = "content_user"> <!-- div para nome de usuário-->
                           <input type="text" name = "user_id" required>
                           <label for="user_id">Telefone, nome de usuário ou email</label>
-                     </div> <!-- fim da div para nome de usuário-->
-                     <div><!-- div para senha-->
-                        <input type="password" name = "user_password" required>
-                        <label for="user_password">Senha</label>
-                     </div><!-- fim da div para senha-->
-                     <button type = "submit">Entrar</button> <!-- Botao entrar-->
-                     <span>ou</span>
-                     <div><!-- div para tags de links (a*2)-->
-                        <a href="#" target = "_blank">Entrar com o Facebook</a>
-                        <a href="#" target = "_blank">Esqueceu a senha?</a>
-                     </div><!-- fim da div para tags de links (a*2)-->
-                   </div><!--fim da div para inputs-->
-                   <div><!-- div não tem uma conta-->
-                       <p>Não tem uma conta<a href="#" target="_blank">Cadastre-se</a></p>
+                       </div> <!-- fim da div para nome de usuário-->
+
+                       <div class = "content_password"><!-- div para senha-->
+                          <input type="password" name = "user_password" required>
+                          <label for="user_password">Senha</label>
+                       </div><!-- fim da div para senha-->
+
+                       <button type = "submit">Entrar</button> <!-- Botao entrar-->
+                       <span>ou</span>
+
+                       <div class = "login_links"><!-- div para tags de links (a*2)-->
+                          <a class = "facebook_login" href="#" target = "_blank"><i class="fab fa-facebook-square"></i>Entrar com o Facebook</a>
+                          <a class = "forgot_login" href="#" target = "_blank">Esqueceu a senha?</a>
+                      </div><!-- fim da div para tags de links (a*2)-->
+                   </div><!--fim da div login_main_content (para inputs)-->
+
+                   <div class = "not_account"><!-- div não tem uma conta-->
+                       <p>Não tem uma conta?<a href="#" target="_blank">Cadastre-se</a></p>
                    </div><!--fim da div não tem uma conta-->
-                   <div><!-- div obter aplicativo-->
+
+                   <div class="phone_icons"><!-- div obter aplicativo-->
                      <p>Obtenha o aplicativo</p>
-                     <div><!-- div download-->
+                     <div class = "aplicativos_download"><!-- div download-->
                          <img src="/images/app-store-download.png" alt="Android">
                          <img src="/images/google-play-download.png" alt = "IOS">
                      </div><!-- fim da div download-->
+
                    </div> <!-- fim da div obter aplicativo-->
+
                 </div> <!-- fim da div para container direito de login-->
+
             </section><!-- fim da section-->   
         </main> <!--fim de main-->
         <footer> <!--rodapé-->
             <!--ul>li*11.footer_links>a*1-->
-            <ul>
+            <ul class = "footer_list">
                 <li class="footer_links">
                     <a href="#" target="_blank">Meta</a>
                 </li>
@@ -85,6 +97,8 @@
                 <li class="footer_links">
                     <a href="#" target="_blank">Instagram Lite</a>
                 </li>
+            </ul><!--Fim do 1º ul-->
+            <ul class = "footer_list_dois">
                 <li class="footer_links">
                   <a href="#" target="_blank">Beleza</a>
                 </li>  
@@ -106,9 +120,9 @@
                <li class="footer_links">
                   <a href="#" target="_blank">Artes visuais</a>
                </li> 
-            </ul>
-            <ul>
-                <li>
+            </ul><!--Fim do 2º ul-->
+            <ul class = "copyright">
+                <li class = "footer_links">
                     <select name="select">
                         <option value="idioma01" selected>Português</option>
                         <option value="idioma02">Inglês</option>
@@ -118,8 +132,8 @@
                         <option value="idioma06">Italiano</option>
                     </select>
                 </li>
-                <li>&copy; 2022 Instagram from Meta</li>
-            </ul>
+                <li class = "footer_links">&copy; 2022 Instagram from Meta</li>
+            </ul><!--Fim do 3º ul-->
         </footer> <!--fim do rodapé--> 
     </body>
 </html>

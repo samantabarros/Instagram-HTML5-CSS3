@@ -7,3 +7,208 @@ div{
     padding: 0;
     margin: 0;
 }
+li,
+a{
+    text-decoration: none;
+}
+body{
+    display: flex;
+    width: 100vw; /*Toda a tela*/
+    height: 100vh;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(251, 250, 245);   
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+div.imagem_phone{
+    margin-left: 1.5rem; /* 1 rem = 16px (padrão)*/
+}
+div.imagem_phone img{
+    width: 400px;
+    height: auto;
+}
+div.main_content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.login_main_content{
+    width: 275px;
+    border: 1px solid gray;
+    padding: 1.5rem;
+    border-radius: 4px;
+    background-color: white;
+}
+div.content_header{
+    display:flex;
+    justify-content: center;
+}
+div.content_header img{
+    width: 200px;
+}
+div.content_user{
+    margin: 1rem 0 0.5rem 0;
+}
+div.content_user, 
+div.content_password{
+    position:relative;
+}
+div.content_user input,
+div.content_password input{
+    display: block; /*escopo de linha*/
+    padding: 1rem 0.8rem 0.8rem 0.8rem;/*distância entre o conteúdo de um elemento e suas bordas.*/
+    width: 100%; /* largura da área de conteúdo de um elemento*/
+    max-width: 245px;
+    border-radius: 0.2rem; /* define como as bordas arredondadas são*/
+    border: 1px solid gray; /*largura da borda, estilo e cor*/
+}
+.content_user label,
+.content_password label{
+    font-size: 0.8rem;
+    color: gray;
+    top: 35%;
+    left: 5%;
+    position: absolute;/*como um elemento pode ser posicionado em um documento*/
+    transform: translateY(-30%);
+    -ms-transform: translateY(-30%); 
+    -webkit-transform: translateY(-30%);
+    cursor:text;
+    user-select: none;
+    transition: 0.3s ease-in-out; /*transição entre dois estados de um elemento*/  
+}
+input[data-empty = "false"] + label,
+input:valid + label,
+input:focus + label{
+    top: 5px;
+    left: 10px;
+    font-size: 10px;
+    color: gray;  
+}
+button{
+    margin: 0.5rem 0;
+    padding: 0.5rem 2.5rem;
+    width: 100%;
+    max-width: 272px;
+    display: block;
+    background-color: lightblue;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #3caff7;
+}
+span{
+    position: relative;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    color: gray;
+    font-size: 0.8rem;
+}
+span::after,
+span::before{
+    content: "_________________";
+    position: absolute;
+    bottom: 5px;
+}
+span::after{
+    right: 0;
+}
+span::before{
+    left: 0;
+}
+.login_links{
+ display: flex;
+ justify-content: center;
+ flex-direction: column;   
+}
+.login_links a{
+   text-align: center;
+    margin: 0.2rem;
+}
+.login_links a.facebook_login,
+.login_links a.forgot_login,
+.not_account a{
+    color: rgb(22, 92, 221)
+}
+.login_links a.facebook_login svg{
+    font-weight: bold;
+    margin-right: 0.4rem;
+}
+.login_links a.forgot_login{
+    margin-right: 0.4rem;
+}
+.not_account{
+    display: flex;
+    border: 1px solid gray;
+    border-radius: 4px;
+    width: 325px;
+    justify-content: center;
+    margin: 0.5rem;
+    padding:0.8rem 0;
+    color: black;
+    background-color: white;
+}
+.phone_icons p{
+    display: flex;
+    justify-content: center;
+    margin: 0.5rem 0 1rem 0;
+    color: gray;
+}
+.phone_icons div{
+    display: flex;
+    justify-content: space-around;
+    width: 320px;
+}
+.phone_icons div img{
+    width: 150px;
+    height: auto;
+    margin: 0 0.2rem 0.2rem 0.2rem;
+}
+.footer{
+    display: block;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+ul{
+    display:flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+}
+ul.footer_list li.footer_links{
+    display: inline;
+}
+ul.footer_list_dois li.footer_links{
+    display: inline;
+}
+li.footer_links a{
+    margin: 0 5px;
+    color:gray;
+    font-size: 0.8rem;
+}
+ul.copyright li{
+    display: inline;
+    margin: 0 1rem;
+    color: gray;
+    font-size: 0.8rem;
+}
+ul.copyright li.footer_links select{
+    border: none;
+    background-color: transparent;
+    color: gray;
+    font-size: 0.8rem;
+}
+
